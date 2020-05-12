@@ -6,23 +6,23 @@
 
 ## Setup:
 
-### Git clone
+#### Git clone
 git clone https://github.com/m-nobre/laravel-adminator.git
-### Install backend dependencies
+#### Install backend dependencies
 composer install 
-### Chmod Storage
+#### Chmod Storage
 sudo chmod 777 storage/ -R 
-### Enable link to storage
+#### Enable link to storage
 php artisan storage:link 
-### Update database credentials configuration
+#### Update database credentials configuration
 cp .env.example .env 
-### Generate new keys for Laravel
+#### Generate new keys for Laravel
 php artisan key:generate
-### Optional: Run migration and seed users and categories for testing
+#### Optional: Run migration and seed users and categories for testing
 php artisan migrate:fresh --seed 
-### or npm i to Install node dependencies(>= node 9.x)
+#### or npm i to Install node dependencies(>= node 9.x)
 yarn install 
-### To compile assets for prod
+#### To compile assets for prod
 npm run production 
 
 ```
